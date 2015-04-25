@@ -1,5 +1,9 @@
 /* ------- Structure ------- */
 
+body {
+	padding-top: 90px;
+}
+
 #main {
 	position: relative;
 	z-index: 10;
@@ -12,7 +16,7 @@
 
 #content article {
 	width: 100%;
-	max-width: 620px;
+	max-width: 750px;
 	margin: 0 auto;
 	padding-right: 20px;
   padding-left: 20px
@@ -35,32 +39,177 @@
 
 /* ------- Typography ------- */
 
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Arvo', Times, serif;
+}
+
+p,
+li,
+.btn {
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.post .post-title {
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 700;
+}
+
+.serif {
+	font-family: 'Arvo', Times, serif!important;
+}
+
+.sans {
+	font-family: 'Lato', Arial, sans-serif!important;
+}
+
+/* ------- ------- */
+
 .page-header {
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
 	margin: 0 auto 20px auto;
+	padding-bottom: 1px;
+}
+
+.page-header h1 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.widget {
+	font-size:14px;
+	line-height: 21px;
 }
 
 .widget-title {
 	margin-top: 0;
 }
 
+.post {
+	font-size: 17px;
+	line-height: 27px
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
 /* ------- Header ------- */
 
 .navbar {
 	margin-bottom: 0;
+	border-bottom: 1px solid #5a2c81;
+	background: #fff
 }
 
-/*.nav>li>a {
+.navbar-brand {
+	text-indent: -9999px;
+	height: 90px;
+	width: 370px;
+	background-image: url('assets/img/logo.png');
+	background-position: 15px 7px;
+	background-repeat: no-repeat;
+	background-size: 285px 75px;
+}
+
+#header .nav {
+	margin-top: 38px;
+	margin-right: 5px
+}
+
+.nav>li>a {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#header .nav>li>a {
 	font-weight: 900;
 	font-family: 'Lato', Arial, sans-serif;
-}*/
+	color: #5a2c81;
+	border-bottom: 3px solid #fff;
+	font-size: 12px
+}
+
+#header .nav>li>a:hover,
+#header .nav>li>a:focus {
+	border-bottom: 3px solid #5a2c81;
+	background-color: #fff
+}
+
+/* ------- Post Styles ------- */
+
+.post-header {
+	margin-bottom: 25px;
+}
+
+.post-header img {
+	position: relative;
+	z-index: 15;
+}
+
+.post-header h2.post-title {
+	margin-top: 0;
+	position: relative;
+	top: -50px;
+	z-index: 25;
+	margin-left: 25px;
+}
+
+.post-meta {
+	margin-top: -20px;
+}
+
+.post-meta,
+.post-body {
+	margin-left: 25px;
+}
+
+.post-title,
+.post-meta {
+	font-weight: 900;
+}
+
+/* ------- Sidebar ------- */
+
+.widget {
+	margin: 30px 0;
+}
+
+.widget:first-of-type {
+	margin-top: 0;
+}
+
+.signup .form-group {
+	width: 65%!important;
+	float: left;
+	margin-right: 2.5%;
+}
+
+.signup .btn {
+	width: 30%;
+}
 
 /* ------- Footer ------- */
 
 #footer {
-	padding: 50px 0; 
+	padding: 25px 0 75px 0; 
+	background-color: #5a2c81;
+}
+
+#footer a,
+#footer .nav>li>a {
+	color:#fff;
 }
 
 #footer ul {
@@ -95,4 +244,48 @@
 	width: auto;
 	display: block;
 	margin: 10px auto;
+}
+
+/* ------- Form Styles ------- */
+
+.form-control,
+.btn {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+#header .form-control {
+	-moz-border-radius: 20px 0 0 20px;
+	-webkit-border-radius: 20px 0 0 20px;
+	border-radius: 20px 0 0 20px;
+}
+
+#header .btn {
+	-moz-border-radius: 0 20px 20px 0;
+	-webkit-border-radius: 0 20px 20px 0;
+	border-radius: 0 20px 20px 0;
+}
+
+#sidebar .form-control {
+	border-color: #888;
+}
+
+.btn {
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding-top: 7px;
+	padding-bottom: 8px;
+}
+
+.btn-primary {
+	background-color: #5a2c81;
+	border-color: #482469;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #73449c;
+	border-color: #5a2c81;
 }
